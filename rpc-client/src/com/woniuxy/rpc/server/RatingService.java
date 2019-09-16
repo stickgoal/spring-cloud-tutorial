@@ -1,4 +1,4 @@
-package me.maiz.trainning.rpc.server;
+package com.woniuxy.rpc.server;
 
 public interface RatingService {
     /**

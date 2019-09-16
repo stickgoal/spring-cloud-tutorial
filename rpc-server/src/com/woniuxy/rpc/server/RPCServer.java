@@ -1,4 +1,4 @@
-package me.maiz.trainning.rpc.server;
+package com.woniuxy.rpc.server;
 
 import java.io.*;
 import java.net.ServerSocket;
