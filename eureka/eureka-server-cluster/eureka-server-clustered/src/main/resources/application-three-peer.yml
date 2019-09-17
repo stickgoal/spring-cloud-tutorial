@@ -1,3 +1,4 @@
+# 公共配置，服务名字和serviceurl,其中serviceurl写入了3个节点的地址
 spring:
   application:
     name: eureka-server
@@ -6,7 +7,9 @@ eureka:
     serviceUrl:
       defaultZone: http://peer1:9600/eureka/,http://peer2:9601/eureka/,http://peer3:9603/eureka/
 
+# 配置三套不同的配置，yml支持用“---”分隔不同的配置
 ---
+# spring.profiles指定配置名字，运行时通过改名字指定选用该套配置
 spring:
   profiles: peer1
 eureka:
