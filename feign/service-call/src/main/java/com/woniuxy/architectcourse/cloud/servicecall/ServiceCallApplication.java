@@ -29,8 +29,8 @@ public class ServiceCallApplication {
         return new RestTemplate();
     }
 
-    @Bean
-    public IRule ribbonRule(){
-        return new RandomRule();
-    }
+//    @Bean
+//    public IRule ribbonRule(){
+//        return new RandomRule();
+//    }
 }

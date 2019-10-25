@@ -14,7 +14,7 @@ import java.util.Date;
  */
 @Component
 public class ReviewClientFallBackFactory implements FallbackFactory<ReviewClient> {
-    public static final Logger logger = LoggerFactory.getLogger(MovieController.class);
+    public static final Logger logger = LoggerFactory.getLogger(ReviewClientFallBackFactory.class);
 
 
     @Override
