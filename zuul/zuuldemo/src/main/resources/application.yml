@@ -1,0 +1,18 @@
+server:
+  port: 9000
+
+spring:
+  application:
+    name: gateway
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9600/eureka/
+zuul:
+  routes:
+    rating-api:
+      path: /api/rating/**
+      service-id: rating
+    user-api:
+      path: /api/users/**
+      service-id: users

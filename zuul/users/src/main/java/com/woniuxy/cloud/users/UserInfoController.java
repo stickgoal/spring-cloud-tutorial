@@ -1,0 +1,15 @@
+package com.woniuxy.cloud.users;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class UserInfoController {
+
+    @RequestMapping("getUserInfo")
+    public User getUserInfo(int userId){
+        return new User(1,"zhangsan","******",22);
+    }
+
+
+}
